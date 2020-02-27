@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" baseProfile="full" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid meet">
+    <defs>
+        <linearGradient id="seasonsGradient" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0.05" stop-color="#0000B3" />
+            <stop offset="0.25" stop-color="#00E6AC" />
+            <stop offset="0.75" stop-color="#ACE600" />
+            <stop offset="0.95" stop-color="#FF1A1A" />
+        </linearGradient>
+        <radialGradient id="sunGradient">
+            <stop offset="0.65" stop-color="#FFFF00" />
+            <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+        </radialGradient>
+    </defs>
+    <g fill="none" stroke="black" stroke-width="5">
+        <circle cx="500" cy="500" r="496" fill="white" />
+        <line x1="500" y1="980" x2="500" y2="996" />
+        <line x1="500" y1="980" x2="500" y2="996" transform="rotate(30 500 500)" />
+        <line x1="500" y1="980" x2="500" y2="996" transform="rotate(60 500 500)" />
+        <line x1="500" y1="980" x2="500" y2="996" transform="rotate(90 500 500)" />
+        <line x1="500" y1="980" x2="500" y2="996" transform="rotate(120 500 500)" />
+        <line x1="500" y1="980" x2="500" y2="996" transform="rotate(150 500 500)" />
+        <line x1="500" y1="980" x2="500" y2="996" transform="rotate(180 500 500)" />
+        <line x1="500" y1="980" x2="500" y2="996" transform="rotate(210 500 500)" />
+        <line x1="500" y1="980" x2="500" y2="996" transform="rotate(240 500 500)" />
+        <line x1="500" y1="980" x2="500" y2="996" transform="rotate(270 500 500)" />
+        <line x1="500" y1="980" x2="500" y2="996" transform="rotate(300 500 500)" />
+        <line x1="500" y1="980" x2="500" y2="996" transform="rotate(330 500 500)" />
+        <circle cx="500" cy="500" r="140" />
+    </g>
+    <circle cx="500" cy="500" r="380" fill="none" stroke="url(#seasonsGradient)" stroke-width="20" transform="rotate(30 500 500)" />
+    <circle cx="500" cy="230" r="60" fill="url(#sunGradient)" />
+    <g fill="black" text-anchor="middle" font-size="60" font-family="sans-serif">
+        <!-- r = 435, from center to bottom 21
+        y = 500 + 21 - 435 * sin(-30 * n - 90)
+        x = 500 + 435 * cos(-30 * n - 90) -->
+        <text x="500" y="956">0</text>
+        <text x="282.5" y="897.7">1</text>
+        <text x="123.3" y="738.5">2</text>
+        <text x="65" y="521">3</text>
+        <text x="123.3" y="303.5">4</text>
+        <text x="282.5" y="144.3">5</text>
+        <text x="500" y="86">6</text>
+        <text x="717.5" y="144.3">7</text>
+        <text x="876.7" y="303.5">8</text>
+        <text x="935" y="521">9</text>
+        <text x="876.7" y="738.5">10</text>
+        <text x="717.5" y="897.7">11</text>
+    </g>
+    <g id="pointer">
+        <!-- ecuatorR = r * cos(23) -->
+        <path d="M 360,500 a 140,128.9 0 0 1 280,0" stroke="black" stroke-width="5" fill="none" />
+        <line x1="500" y1="320" x2="500" y2="360" stroke="black" stroke-width="5" />
+        <!-- y = 500 + r * cos(90 - 23) -->
+        <line x1="500" y1="554.7" x2="500" y2="980" stroke="black" stroke-width="10" />
+    </g>
+</svg>
