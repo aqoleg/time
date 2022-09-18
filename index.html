@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+    <head>
+        <title>time</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+        <meta name="description" content="moon, seasons, day and year clocks" />
+        <meta name="keywords" content="aqoleg, time, clock, moon, season, day, year" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="icon" href="assets/icon.png" />
+        <link rel="stylesheet" href="assets/style.css" />
+    </head>
+    <body>
+        <div class="header">
+            <h1>time</h1>
+        </div>
+        <div class="row">
+            <div class="svg noinput">
+                <object id="moon" type="image/svg+xml" data="assets/moon.svg">moon <span id="moon_time">-</span></object>
+            </div>
+        </div>
+        <div class="row">
+            <div class="svg noinput">
+                <object id="seasons" type="image/svg+xml" data="assets/seasons.svg">seasons <span id="seasons_time">-</span></object>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input">
+                <label>longitude:
+                    <input id="longitude_input" class="longitude" type="number" />
+                </label>
+                <button id="longitude_button" type="button">set</button>
+            </div>
+            <div class="svg">
+                <object id="day" type="image/svg+xml" data="assets/day.svg">day <span id="day_time">-</span></object>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input">
+                <label>begin:
+                    <input id="begin_input" type="text" />
+                </label>
+                <button id="begin_button" type="button">set</button>
+            </div>
+            <div class="svg">
+                <object id="year" type="image/svg+xml" data="assets/year.svg">year <span id="year_time">-</span></object>
+            </div>
+        </div>
+        <script src="assets/astronomy.js"></script>
+        <script src="assets/script.js"></script>
+    </body>
+</html>
