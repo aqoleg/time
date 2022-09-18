@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid meet">
+    <defs>
+        <radialGradient id="sunGradient">
+            <stop offset="0.65" stop-color="#FFFF00" />
+            <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+        </radialGradient>
+    </defs>
+    <g fill="none" stroke="black" stroke-width="5">
+        <circle cx="500" cy="500" r="496" fill="white" />
+        <line x1="500" y1="980" x2="500" y2="996" />
+        <line x1="500" y1="20" x2="500" y2="4" />
+        <line x1="980" y1="500" x2="996" y2="500" />
+        <line x1="20" y1="500" x2="4" y2="500" />
+    </g>
+    <circle cx="500" cy="500" r="60" fill="gray" />
+    <circle cx="500" cy="330" r="70" fill="lightskyblue" />
+    <path d="M 499,344 c -10,10 -1,8 3,5 s 15,0 17,2 6,0 5,-3 2,-9 7,-10 8,0 1,-4 -2,-7 0,-9 0,-6 -1,-5
+             -4,0 -5,-2 -15,-1 -16,0 -1,2 -5,0 -8,1 -3,6 7,10 -3,20
+             M 500,365 c 10,0 8,5 11,10 s 14,6 16,-4 -4,-12 -1,-15 -1,-5 -3,-3 -15,-2 -24,0 -9,12 1,12
+             M 458,343 c 0,-6 4,-7 6,-6 s 5,-12 9,-15 18,0 20,-2 5,0 3,3 -13,20 -17,13 -7,-11 -10,-3
+             4,15 4,20 1,15 -16,6 -15,-13 -10,-13 11,3 11,-3
+             M 530,300 c -10,-10 -9,-21 6,-6 s 4,16 -6,6"
+          id="earth" fill="green" />
+    <g id="pointer">
+        <circle cx="500" cy="840" r="60" fill="url(#sunGradient)" />
+        <path d="M 440,500 a 60,60 0 0 1 120,0 Z" fill="black" />
+        <line x1="500" y1="750" x2="500" y2="980" stroke="black" stroke-width="10" />
+    </g>
+</svg>

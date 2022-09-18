@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>more time</title>
+
+        <meta charset="utf-8" />
+
+        <meta name="description" content="more moon and seasons clocks" />
+        <meta name="keywords" content="aqoleg, time, clock, moon, season" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#FFFF00" />
+
+        <link rel="icon" href="icon.png" />
+        <style>
+            html, body {
+                margin: 0px;
+                padding: 0px;
+            }
+            div, input {
+                font-family: monospace, sans-serif;
+            }
+            #main {
+                margin: 32px auto;
+                width: 95%;
+                max-width: 600px;
+            }
+            label, input {
+                cursor: pointer;
+            }
+            input {
+                border: 1px solid black;
+                border-radius: 2px;
+                width: 220px;
+                max-width: 90vw;
+                padding: 4px;
+                background: none;
+                font-size: 16px;
+                outline: 0;
+            }
+            input:focus {
+                background: #FFFF00;
+            }
+            a {
+                color: black;
+                outline: 0;
+            }
+            a:focus {
+                background: #FFFF00;
+            }
+
+            @media (hover: hover) {
+                input:hover, a:hover {
+                    background: #FFFF00;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <label>
+                <span>set time:</span>
+                <input id="time" type="text" />
+            </label>
+            <p>link: <a target="_blank" rel="noopener" id="index"></a></p>
+            <p>next full moon: <span id="fullMoon"></span></p>
+            <p>next new moon: <span id="newMoon"></span></p>
+            <p>next first quarter: <span id="firstMoon"></span></p>
+            <p>next last quarter: <span id="lastMoon"></span></p>
+            <p>next june solstice: <span id="june"></span></p>
+            <p>next december solstice: <span id="december"></span></p>
+            <p>next march equinox: <span id="march"></span></p>
+            <p>next september equinox: <span id="september"></span></p>
+            <p>This is a calendar with a clock face,
+                where the moon and the sun are used as true reference points.</p>
+            <p>Calculation error is less than 50 seconds. Algorithms by
+                <a target="_blank" rel="noopener"
+                   href="jean%20meeus%20-%20astronomical%20algorithms.pdf">Jean Meeus</a>. 14 kb
+                <a target="_blank" rel="noopener" href="astronomy.js">script with comments</a>
+                for calculating the moon phases and the solstices/equinoxes.
+            </p>
+            <p>Svg clock faces are handwritten:
+                <a target="_blank" rel="noopener" href="moon.svg">moon</a>,
+                <a target="_blank" rel="noopener" href="seasons.svg">seasons</a>.
+            </p>
+            <p>
+                <a target="_blank" rel="noopener" href="index.html">Main page</a>,
+                <a target="_blank" rel="noopener" href="index.js">main script</a>,
+                <a target="_blank" rel="noopener" href="more.html" id="more">this page</a>,
+                <a target="_blank" rel="noopener" href="more.js">this script</a>,
+                <a target="_blank" rel="noopener" href="icon.svg">svg icon</a>, 196px
+                <a target="_blank" rel="noopener" href="icon.png">png icon</a>.
+            </p>
+            <p>Tests.
+                <a target="_blank" rel="noopener" href="test/astronomy.html">Astronomy</a> with
+                <a target="_blank" rel="noopener" href="test/astronomy.js">script</a>,
+                <a target="_blank" rel="noopener" href="test/moon.html">moon</a> with
+                <a target="_blank" rel="noopener" href="test/moon.js">script</a>,
+                <a target="_blank" rel="noopener" href="test/seasons.html">seasons</a> with
+                <a target="_blank" rel="noopener" href="test/seasons.js">script</a>.
+            <p>
+            <p>
+                The creator and developer (except the book with algorithms) -
+                <a target="_blank" rel="noopener" href="https://aqoleg.com">aqoleg</a>.
+            </p>
+        </div>
+        <script src="astronomy.js"></script>
+        <script src="more.js"></script>
+    </body>
+</html>
